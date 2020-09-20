@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Bank of DollarBills - Customer Window" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.CustomerWindowController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="413.0" layoutY="20.0" text="Online Purchase" />
+            <Label layoutX="72.0" layoutY="20.0" text="Withdraw" />
+            <Label layoutX="265.0" layoutY="20.0" text="Deposit" />
+            <Label layoutX="263.0" layoutY="182.0" text="Balance" />
+            <Label layoutX="86.0" layoutY="182.0" text="Level" />
+            <Separator layoutX="190.0" orientation="VERTICAL" prefHeight="269.0" prefWidth="3.0" />
+            <Separator layoutX="376.0" orientation="VERTICAL" prefHeight="267.0" prefWidth="2.0" />
+            <Separator layoutX="2.0" layoutY="166.0" prefWidth="200.0" />
+            <Separator layoutX="187.0" layoutY="166.0" prefWidth="200.0" />
+            <Separator layoutX="387.0" layoutY="166.0" prefWidth="200.0" />
+            <Separator layoutY="267.0" prefWidth="200.0" />
+            <Separator layoutX="202.0" layoutY="267.0" prefWidth="200.0" />
+            <Separator layoutX="398.0" layoutY="267.0" prefWidth="200.0" />
+            <Label layoutX="382.0" layoutY="179.0" prefHeight="21.0" prefWidth="202.0" text="Welcome Customer!  " textFill="#a902eb" />
+            <Label layoutX="382.0" layoutY="200.0" prefHeight="16.0" prefWidth="202.0" text="Please select any of the " />
+            <Label layoutX="402.0" layoutY="216.0" prefHeight="16.0" prefWidth="188.0" text="following options and read the " />
+            <Label layoutX="402.0" layoutY="232.0" prefHeight="16.0" prefWidth="176.0" text="response from the system " />
+            <Label layoutX="402.0" layoutY="248.0" prefHeight="16.0" prefWidth="187.0" text="below!" />
+            <Label fx:id="sysresp" layoutX="75.0" layoutY="296.0" prefHeight="63.0" prefWidth="436.0" text="System Response.. " />
+            <Button fx:id="logoutbutt" layoutX="526.0" layoutY="333.0" mnemonicParsing="false" onAction="#logoutButton" text="Logout" />
+            <Button fx:id="balbutt" layoutX="205.0" layoutY="211.0" mnemonicParsing="false" onAction="#balanceButton" text="View Balance - Click me!" />
+            <Button fx:id="levbutt" layoutX="26.0" layoutY="211.0" mnemonicParsing="false" onAction="#levelButton" text="View Level - Click me!" />
+            <Button fx:id="depbutt" layoutX="230.0" layoutY="135.0" mnemonicParsing="false" onAction="#depositButton" text="Confirm Deposit" />
+            <Button fx:id="onlinepurbutt" layoutX="400.0" layoutY="135.0" mnemonicParsing="false" onAction="#onlinePurchaseButton" text="Confirm Online Purchase" />
+            <Button fx:id="withbutt" layoutX="40.0" layoutY="135.0" mnemonicParsing="false" onAction="#withdrawButton" text="Confirm Withdraw" />
+            <TextField fx:id="withuser" layoutX="21.0" layoutY="74.0" promptText="Withdraw Amount.." />
+            <TextField fx:id="depuser" layoutX="206.0" layoutY="74.0" promptText="Deposit Amount.." />
+            <TextField fx:id="puruser" layoutX="402.0" layoutY="74.0" promptText="Purchase Amount.." />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
